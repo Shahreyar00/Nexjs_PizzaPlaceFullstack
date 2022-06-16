@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+.container{
+    height: 80px;
+    padding: 0px 20px;
+    background-color: #d1411e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: "Nunito", sans-serif;
+}
+
+.item1{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.item2{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item3{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cart{
+    cursor: pointer;
+}
+
+.callButton{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.texts{
+    margin-left: 12px;
+    color: white;
+}
+
+.text:first-child{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text:last-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.list{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+.listItem{
+    padding: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo{
+    width: 100px;
+    height: 69px;
+    font-size: 26px;
+    align-items: center;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.cart{
+    position: relative;
+}
+
+.counter{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+@media screen and (max-width:1030px){
+    .listItem{
+        padding: 10px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .texts{
+        margin-left: 5px;
+        color: white;
+    }
+    
+    .text:first-child{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .text:last-child{
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width:918px){
+    .callButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width:748px){
+    .item2{
+        flex: 5;
+    }
+
+    .item3{
+        flex: 0.5;
+    }
+
+    .container{
+        padding: 0px 5px;
+    }
+
+    .logo{
+        margin-left: 10px;
+        width: 80px;
+        height: 50px;
+        font-size: 18px;
+        align-items: center;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .item3{
+        padding-right: 10px;
+    }
+
+    .item1{
+        display: none;
+    }
+
+    .list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .listItem{
+        padding: 5px;
+        font-size: 14px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:472px){
+    .logo{
+        display: none;
+    }
+}
+
+
